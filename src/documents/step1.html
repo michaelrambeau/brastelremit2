@@ -1,0 +1,317 @@
+---
+layout: registration
+title: Subscription
+inMenu: true
+position: 1.1
+menuId: REGISTRATION
+---
+
+<div class="container step1">
+    <div class="body-content">
+          
+        <h1>Application form <small>Step 1/5</small></h1>
+          
+          <p class="instruction">Please fill in the form. All fields are mandatory unless mentioned otherwise.</p>
+          
+<form class="form-horizontal">
+    <div class="panel">
+      <div class="form-group">
+        <label for="email" class="col-lg-4 control-label">Email address</label>
+        <div class="col-lg-7">
+            <input type="text" class="form-control" id="email" placeholder="" value="youremail@worldcompany.com">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>        
+      <div class="form-group">
+        <label for="email-confirmation" class="col-lg-4 control-label">Confirm email address</label>
+        <div class="col-lg-7">
+            <input type="text" class="form-control" id="email-confirmation" placeholder="" value="youremail@worldcompany.com">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>        
+      <div class="form-group">          
+        <label for="Username" class="col-lg-4 control-label">Username</label>
+        <div class="col-lg-7">
+            <input type="text" class="form-control" id="Username" placeholder="Username" value="michael">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Name (Roman letters)</label>
+        <div class="col-lg-7">
+            <input type="text" class="form-control" id="Username" placeholder="" value="Michael Rambeau">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Name (kanji)</label>
+        <div class="col-lg-7">
+          <input type="text" class="form-control" id="Username" placeholder="">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+    
+    <div class="panel">
+      <div class="form-group">
+        <label for="postalcode" class="col-lg-4 control-label">Postal Code</label>
+        <div class="col-lg-7">
+            <span class="postal-code-container">
+                          <input type="hidden" name="postalCode" value="">
+                          <input type="hidden" name="prefecture" value="">
+                          <input type="hidden" name="cityward" value="">
+                          <input type="hidden" name="area" value="">
+                        <div class="ajax-spinner right"></div>
+                        <input type="text" value="567" class="txt postalcode1 ignore-validation form-control" style="width: 58px;display:inline;">
+                            - <input type="text" value="0883" class="txt postalcode2 ignore-validation form-control" style="width: 62px;display: inline;">
+                        <button type="button" style="margin-left: 5px;" class="btn btn-mini btn-primary">SEARCH</button></span>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="form-group">
+        <label for="prefecture" class="col-lg-4 control-label">Prefecture</label>
+        <div class="col-lg-7">
+            <select class="required form-control" name="display-prefecture" id="prefecture">
+                          <option value="">---</option>
+                          <option value="AICHI-KEN">Aichi</option>
+                          <option value="AKITA-KEN">Akita</option>
+                          <option value="AOMORI-KEN">Aomori</option>
+                          <option value="CHIBA-KEN">Chiba</option>
+                          <option value="EHIME-KEN">Ehime</option>
+                          <option value="FUKUI-KEN">Fukui</option>
+                          <option value="FUKUOKA-KEN">Fukuoka</option>
+                          <option value="FUKUSHIMA-KEN">Fukushima</option>
+                          <option value="GIFU-KEN">Gifu</option>
+                          <option value="GUNMA-KEN">Gunma</option>
+                          <option value="HIROSHIMA-KEN">Hiroshima</option>
+                          <option value="HOKKAIDO">Hokkaido</option>
+                          <option value="HYOGO-KEN">Hyogo</option>
+                          <option value="IBARAKI-KEN">Ibaraki</option>
+                          <option value="ISHIKAWA-KEN">Ishikawa</option>
+                          <option value="IWATE-KEN">Iwate</option>
+                          <option value="KAGAWA-KEN">Kagawa</option>
+                          <option value="KAGOSHIMA-KEN">Kagoshima</option>
+                          <option value="KANAGAWA-KEN">Kanagawa</option>
+                          <option value="KOCHI-KEN">Kochi</option>
+                          <option value="KUMAMOTO-KEN">Kumamoto</option>
+                          <option value="KYOTO-FU">Kyoto</option>
+                          <option value="MIE-KEN">Mie</option>
+                          <option value="MIYAGI-KEN">Miyagi</option>
+                          <option value="MIYAZAKI-KEN">Miyazaki</option>
+                          <option value="NAGANO-KEN">Nagano</option>
+                          <option value="NAGASAKI-KEN">Nagasaki</option>
+                          <option value="NARA-KEN">Nara</option>
+                          <option value="NIIGATA-KEN">Niigata</option>
+                          <option value="OITA-KEN">Oita</option>
+                          <option value="OKAYAMA-KEN">Okayama</option>
+                          <option value="OKINAWA-KEN">Okinawa</option>
+                          <option value="OSAKA-FU" selected="selected">Osaka</option>
+                          <option value="SAGA-KEN">Saga</option>
+                          <option value="SAITAMA-KEN">Saitama</option>
+                          <option value="SHIGA-KEN">Shiga</option>
+                          <option value="SHIMANE-KEN">Shimane</option>
+                          <option value="SHIZUOKA-KEN">Shizuoka</option>
+                          <option value="TOCHIGI-KEN">Tochigi</option>
+                          <option value="TOKUSHIMA-KEN">Tokushima</option>
+                          <option value="TOKYO-TO">Tokyo</option>
+                          <option value="TOTTORI-KEN">Tottori</option>
+                          <option value="TOYAMA-KEN">Toyama</option>
+                          <option value="WAKAYAMA-KEN">Wakayama</option>
+                          <option value="YAMAGATA-KEN">Yamagata</option>
+                          <option value="YAMAGUCHI-KEN">Yamaguchi</option>
+                          <option value="YAMANASHI-KEN">Yamanashi</option>
+                        </select>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+     <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">City/ward</label>
+        <div class="col-lg-7">
+          <input type="text" class="form-control" id="city" value="IBARAKI-SHI" placeholder="">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Area</label>
+        <div class="col-lg-7">
+            <input type="text" class="form-control" id="area" placeholder="" value="OOTECHOU">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Number</label>
+        <div class="col-lg-7">
+          <input type="text" class="form-control" id="number" placeholder="">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Complement</label>
+        <div class="col-lg-7">
+          <input type="text" class="form-control" id="complement" placeholder="">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>   
+        
+    <div class="panel">
+      <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Gender</label>
+        <div class="col-lg-7">
+            <div class="radio-inline">
+                <input type="radio" class="required" id="gender-1" value="1" checked="checked" name="gender">
+                <label for="gender-1">Male</label>
+            </div>
+            <div class="radio-inline">
+                <input type="radio" class="required" id="gender-2" value="2" name="gender">
+                <label for="gender-2">Female</label>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Date of birth</label>
+        <div class="col-lg-7">
+            <input type="text" class="form-control" id="Username" placeholder="" value="">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Nationality</label>
+        <div class="col-lg-7">
+          <input type="text" class="form-control" id="Username" placeholder="">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Phone number 1</label>
+        <div class="col-lg-7">
+          <input type="text" class="form-control" id="Username" placeholder="" value="090 1234 4567">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Phone number 2</label>
+        <div class="col-lg-7">
+          <input type="text" class="form-control" id="Username" placeholder="">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Email language</label>
+        <div class="col-lg-7">
+          <select class="required small-content form-control" name="language">
+                          <option value="">---</option>
+                          <option value="3">Japanese</option>
+                          <option selected="selected" value="4">English</option>
+                          <option value="5">Tagalog</option>
+                          <option value="16">Bahasa Indonesia</option>
+                          <option value="15">Vietnamese</option>
+                          <option value="17">Bahasa Malaysia</option>
+                          <option value="20">Nepali</option>
+            </select>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Occupation</label>
+        <div class="col-lg-7">
+            <select name="occupation" class="required form-control">
+              <option value="">---</option>
+              <option value="1">Company executive</option>
+              <option value="2">Specialist personnel</option>
+              <option value="3">Retiree</option>
+              <option value="4" selected="selected">Student</option>
+              <option value="5">Executive employee (company/public)</option>
+              <option value="6">Self-employed/freelancer</option>
+              <option value="7">Housewife/man</option>
+              <option value="8">Unemployed</option>
+              <option value="9">General employee (company/public)</option>
+              <option value="10">Temp/part-timer</option>
+            </select>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>  
+        
+   <p class="instruction">Applicant's Account Information for Refund</p>
+   <ul style="font-size:12px;"><li>The bank/post office account must be a Japanese account that is registered in a Japanese financial institution. </li><li>The account holder name must be entered exactly as registered in the bank/post office account. Please check the passbook before submitting the form.</li></ul>
+   
+   <div class="panel">
+    <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Financial Institution</label>
+        <div class="col-lg-7">
+          <span class="radio-buttons">
+              <div class="radio-inline">
+                          <input type="radio" checked="checked" class="required" id="financialInstitutionType-1" value="1" name="financialInstitutionType" checked="checked">
+                          <label for="financialInstitutionType-1">Bank</label>
+              </div>
+              <div class="radio-inline">
+                          <input type="radio" class="required" id="financialInstitutionType-2" value="2" name="financialInstitutionType">
+                          <label for="financialInstitutionType-2">Postal office</label>
+            </div>
+          </span>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Bank Name</label>
+        <div class="col-lg-7">
+          <input type="text" class="form-control" id="complement" placeholder="" value="My bank">
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Branch Name</label>
+        <div class="col-lg-7">
+          <input type="text" class="form-control" id="complement" placeholder="" value="My branch">
+        </div>
+        <div class="col-lg-1"></div>
+    </div>        
+    <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Account Type</label>
+        <div class="col-lg-7">
+          <span class="radio-buttons">
+              <div class="radio-inline">
+                          <input type="radio" class="required" checked="checked" id="accountType-1" value="1" name="accountType">
+                          <label for="accountType-1">Ordinary</label>
+              </div>
+              <div class="radio-inline">
+                          <input type="radio" class="required" id="accountType-2" value="2" name="accountType">
+                          <label for="accountType-2">Current</label>
+              </div>
+              <div class="radio-inline">
+                          <input type="radio" class="required" id="accountType-3" value="3" name="accountType">
+                          <label for="accountType-3">Savings</label>
+              </div>
+            </span>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>        
+    <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Account Number</label>
+        <div class="col-lg-7">
+          <input type="text" class="form-control" id="complement" placeholder="" value="1234567">
+        </div>
+        <div class="col-lg-1"></div>
+    </div>        
+    <div class="form-group">
+        <label for="Username" class="col-lg-4 control-label">Account Holder Name</label>
+        <div class="col-lg-7">
+          <input type="text" class="form-control" id="complement" placeholder="" value="Michael Rambeau">
+        </div>
+        <div class="col-lg-1"></div>
+    </div>        
+   </div>
+   <!--panel-->
+        
+</form>
+          
+          <p class="text-center">
+              <a href="step2.html" class="btn btn-primary">NEXT &raquo;</a>
+          </p>
+              
+            
+</div>
+</div>

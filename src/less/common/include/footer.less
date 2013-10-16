@@ -1,0 +1,59 @@
+footer{
+    background-color: @imt-yellow;
+    padding: 15px 0px;
+    color: black;
+    color: black;
+    
+    .links{
+        a,a:visited{
+            color: @imt-black;
+            font-size: 12px;
+            margin-right: 20px;
+            line-height: 20px;
+            text-decoration: underline;
+            font-weight: normal;
+            display: inline-block;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    }
+    .contact-us{
+	float:right;
+	height: 28px;
+        .part1{
+            float:left;
+            background: transparent url('images/contact-us.png') no-repeat ;
+            height: 28px;
+            width:10px;
+            text-align:center;
+        }
+        .part2{
+            float:left;
+            background-color:white;
+            height: 28px;
+        }
+        a{
+            color:inherit;
+            font-weight:bold;
+            padding:5px 10px 0 0;	
+            display:block;
+            text-decoration:none;
+        }
+    }
+    .legal-information {
+        font-size: 12px;
+        margin: 5px 0 0;
+        color: white;
+    }    
+}
+/* SMALL SCREENS */
+@media (max-width: 768px) {
+    footer{
+        padding:0;
+    }
+    footer .container{
+        padding:10px;
+    }
+}
+

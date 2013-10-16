@@ -1,0 +1,42 @@
+table.fees{
+    width:auto;
+    border-color: black;
+    thead{
+        th{
+            background-color: #E3E3E2;
+            border-color:black;
+            border-bottom-width:0;
+            @media screen and (max-width: 768px){
+                padding:4px;
+                font-weight: normal;
+            }
+        }
+    }
+    tbody{
+        td{
+            border-color:black;
+            @media screen and (max-width: 768px){
+                padding:4px;
+            }
+        }
+        .fee-value{
+            color: #E35D00;
+            font-weight: bold;
+            text-align: right;
+        }
+        td.amount{
+            background-color: #FCF4DB;
+            font-weight: bold;
+            text-align: left;
+            @media screen and (max-width: 768px){
+                font-weight: normal;
+            }
+        }
+
+    }       
+        
+    
+}
+table.restrictions{
+    width:auto;
+}

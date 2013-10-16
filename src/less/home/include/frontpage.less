@@ -1,0 +1,174 @@
+@import "../../bootstrap/bootstrap3/variables.less";
+
+.jumbotron{
+    h1{
+        font-family: 'Oswald', "Trebuchet MS";
+        font-weight: normal;
+        font-size: 80px;
+        text-shadow: #EEECE5 2px 2px;        
+        margin-top:0;
+    }
+    h2{
+        font-family: 'Oswald', "Trebuchet MS";
+        font-weight: normal;
+        font-size: 40px;
+        margin-top:0;
+    }
+    .text{
+      text-shadow: #EEECE5 1px 1px;
+    }
+    &.white{
+      margin:0;
+      background-color:white;
+      padding: 40px 0 20px;      
+    }
+}
+
+
+
+.panel{
+    border-width: 0;
+    h2{
+        margin-top:0;
+    }
+    .panel-heading{
+        padding: 5px 10px;
+    }
+    .sub-title{
+      font-size:18px;
+    }
+}
+.point{
+    padding-top:0;
+    h2{
+        background: transparent url("images/orange_check_mark.png") no-repeat 0 5px;
+        padding-left:32px;
+        padding-top: 8px;
+        margin-top: 0;
+        font-family: 'Oswald';
+        font-size: 36px;
+    }
+}
+
+/* SMALL SCREENS */
+@media (max-width: 768px) { 
+  h1{
+    font-family: 'Oswald';
+    color: black;
+    margin: 5px 0 10px;
+    text-shadow: #EEECE5 1px 1px;    
+  }
+    .body-content{
+        padding:0;
+    }
+    .jumbotron{
+        font-size: 16px;
+        padding:0;
+        line-height: 24px;
+        border-radius: 0;
+        margin-bottom: 0;
+
+        h1{
+            margin: 10px 0 10px;
+            font-size: 30px;
+            
+        }
+        h2{
+          font-size: 26px;
+        }
+        .btn{
+            padding: 3px 5px;
+            margin-top:5px;
+        }
+    }
+
+    h2{
+        margin: 10px 0 5px;
+        font-size: 28px;
+    }
+    .point h2{
+        font-size: 30px;
+        font-family: 'Oswald';
+        padding-top:15px;
+    }
+    .point .panel-body{
+      padding:0;
+    }
+    .jumbotron.white{
+      padding-top: 20px;
+    }
+}/*for small screeens!*/
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Let the jumbotron breathe */
+  .jumbotron {
+    margin-top: 20px;
+  }
+  /* Remove padding from wrapping element since we kick in the grid classes here */
+  .body-content {
+    padding: 0;
+  }
+}
+
+/*Fees table*/
+.campaign-fees{
+    margin: 10px auto 15px;
+    td.fee-value{
+    text-align: center;
+    }
+    th,td{
+        padding: 5px 5px;
+    }
+    th:first-child{
+    border-right-color:white;
+    }
+    thead{
+        th{
+               background-color: #f75400;
+               color: white;
+               font-weight: normal;
+               font-size: 1em;
+               padding: 5px 0;
+               text-align: center;
+               border-bottom-width: 0;
+        }
+        .fee{
+            width:125px;
+        }
+    }
+}
+
+.globe {
+    background-image: url("../img/home/world2.png");
+    background-size: 500px 510px;
+    height: 510px;
+    position: absolute;
+    right: 0px;
+    top:25px;
+    transform: perspective(600px);
+    width: 500px;
+    z-index: 1;
+}
+.flags{
+  img{
+    @media (min-width:@screen-sm){
+       width:40px;
+    }
+    @media (min-width:@screen-md){
+       width:50px;
+    }
+    @media (min-width:@screen-lg){
+       width:60px;
+       margin-right:10px;
+       margin-bottom: 5px;
+    }
+  }
+}
+
+@media(min-width:@screen-lg){
+  .maintenance{
+    min-height: 422px;
+  }
+}

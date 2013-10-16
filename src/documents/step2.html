@@ -1,0 +1,89 @@
+---
+layout: registration
+title: Registration step 2
+menuId: REGISTRATION
+---
+<div class="container step2">
+  <div class="body-content">
+
+    <h1>Application form <small>Step 2/5</small></h1>
+
+    <form action="" method="post" id="form2">
+        
+        <p class="instruction">To apply for the Brastel Remit service you must provide ID verification documents.<br>Please choose one of the methods and follow the instructions:</p>
+        <div class="panel">
+            <img alt="step1" src="http://brastelremit.jp/GenericFiles/imt/img/external/howitworks/step1-kuroneko.png" class="pull-right visible-lg"/>
+          <div class="radio">
+            <input type="radio" value="4" checked="checked" id="verification-delivery" name="documentSendMethod">
+            <label class="delivery-type" for="verification-delivery">By Kuroneko Yamato delivery service</label>
+          </div>
+          <p>Within a week, you will receive your username and temporary sign in password (by restricted delivery service) to activate your account and start using the Brastel Remit service.<br>You will be requested by the deliverer to present one of the following documents:</p>
+          <ul>
+            <li>Valid Passport</li>
+            <li>Alien Registration Card</li>
+            <li>Driver's License</li>
+            <li>Insurance Card</li>
+            <li>Pension Book</li>
+          </ul>
+          <br/>
+        </div>
+<!--          panel-->
+
+        <div class="panel">
+            <img alt="step1" src="http://brastelremit.jp/GenericFiles/imt/img/external/howitworks/step1-mail.png" class="pull-right visible-lg"/>
+          <div class="radio">
+            <input type="radio" value="2" id="verification-mail" name="documentSendMethod">
+            <label class="delivery-type" for="verification-mail">By mail (post office)</label>
+          </div>
+          <p>After submitting the online form, you must send us your ID verification documents to finalize your subscription.<br>You may submit one of the following documents:</p>
+          <ul>
+            <li>Copy of the Alien Registration Card (both sides) or Residence Card (both sides)</li>
+            <li>Copy of the driver's license (both sides)</li>
+            <li>Copy of the Resident Registration Card (with photo)</li>
+            <li>Residence Certificate (original, issued within the last 3 months)</li>
+          </ul>
+          <p>You may also submit a copy of your passport (within validation, pages that contain your name, photo, passport number, expiration date and signature), insurance card or pension book PLUS utility payment receipt (recent three months).</p>
+        </div>
+
+        <div class="panel">
+          <img alt="step1" src="http://brastelremit.jp/GenericFiles/imt/img/external/howitworks/step1-upload.png" class="pull-right visible-lg"/>  
+          <div class="radio">
+            <input type="radio" value="1" id="verification-upload" name="documentSendMethod">
+            <label class="delivery-type" for="verification-upload">By image upload</label>
+          </div>
+          <p>Scan or take a picture of one of the following documents and upload it to our server.<br>The file must be saved as JPEG, PNG, GIF or PDF format (file size must be less than 2MB).</p>
+          <ul>
+            <li>Copy of the Alien Registration Card (both sides) or Residence Card (both sides)</li>
+            <li>Copy of the driver's license (both sides)</li>
+            <li>Copy of the Resident Registration Card (with photo)</li>
+            <li>Residence Certificate (original, issued within the last 3 months)</li>
+          </ul>
+          <p>You may also submit a copy of your passport (within validation, pages that contain your name, photo, passport number, expiration date and signature), insurance card or pension book PLUS utility payment receipt (recent three months).</p>
+          <div id="upload" style="display: none;">
+            <table>
+              <tbody><tr>
+                <td>
+                  <input type="file" runat="server" name="docFile1_1">
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="file" runat="server" name="docFile1_2">
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody></table>
+            <div class="msg-error">File size must be less than 2 MB.</div>
+          </div>
+        </div>
+
+        <p class="text-center">
+          <a href="step1.html" class="btn btn-default">&laquo; PREVIOUS</a>
+          <a href="step3.html" class="btn btn-primary" id="button-next3">NEXT &raquo;</a>
+        </p>
+    </form>
+
+    </div><!-- content -->    
+</div>
+        

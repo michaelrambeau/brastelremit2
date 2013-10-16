@@ -1,0 +1,131 @@
+/*
+Header of the web site
+*/
+.navbar{
+    .navbar-form {
+        margin-bottom: 6px;
+        margin-top: 10px;
+        input{
+            border-style: none;
+            padding:2px;
+        }
+    }
+    .navbar-brand{
+        padding:13px 70px;
+        text-align: left;
+        display:inline-block;
+    }
+
+    .navbar-nav > li > a {
+        color: black;
+    }
+    .navbar-nav > .active > a {
+        color: white;
+    }
+    .navbar-nav > .dropdown > a .caret {
+        border-bottom-color: black;
+        border-top-color: black;
+    }
+
+    .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+        color: white;
+    }
+
+
+    .navbar-toggle{
+        border: 0px solid black;
+        /*    Align menu button to the right*/
+        position:absolute;
+        left: 10px;
+        right:auto;
+
+        &:hover,&:focus {
+              background-color: #BF9212;
+        } 
+        .icon-bar {
+            background-color: black;
+        }    
+    }
+
+    .login-button-small{
+        position:absolute;
+        right: 40px;
+        width:50px;
+        top:0;
+        .dropdown-toggle{
+            width:50px; 
+            height: 50px;
+            display:block;
+            background: transparent url('images/icons/login.png') no-repeat 17px center; 
+        }
+    }
+
+    .login-form{
+        padding:15px;
+        width: 250px;
+    }
+
+    .language-switcher-small{
+        a:hover{
+            text-decoration:none;
+        }
+        position:absolute;
+        right: 10px;
+        top:14px;
+        .dropdown-menu{
+            li{
+                background-color:white;
+            }
+        }
+
+    }
+
+  
+
+}
+@media (min-width: @screen-tablet){
+    .navbar{
+        .navbar-brand{
+            display: none;
+        }
+    }
+    
+}
+
+/* Landscape phones and down */
+@media (max-width: 768px) { 
+    .body-content{
+        padding:0;
+    }
+    .jumbotron h1{
+        margin: 0;
+        font-size: 30px;
+    }
+      .jumbotron{
+        font-size: 1.2em;
+        padding:10px;
+        line-height: 24px;
+        border-radius: 0;
+        margin-bottom: 0;
+/*        background: transparent url('../img/yens_from_japan.png') no-repeat;*/
+    }
+     .jumbotron .btn{
+         padding: 3px 5px;
+         margin-top:5px;
+    }
+
+    h2{
+        margin: 10px 0 5px;
+        font-size: 28px;
+    }
+    h2.point{
+        font-size: 32px;
+    }    
+}/*for small screeens!*/
+
+
+
+
+
+
+

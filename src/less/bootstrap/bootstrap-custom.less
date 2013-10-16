@@ -1,0 +1,26 @@
+//1. Import iMT global variables that contain @imt-orange and @imt-yellow definitions
+@import "../global-variables.less";
+
+//2. Import Bootstrap "main" file
+@import "bootstrap3/bootstrap.less";
+
+//3. Redefining some bootstrap variables 
+//We redefine the variables here to avoid updatin directly bootstrap files, to make updagrade easier.
+
+@brand-primary: @imt-orange;//orange color used for links, primary buttons...
+@navbar-color: #140E00;//#777;
+
+@state-info-bg: lighten(@imt-yellow,10%);
+@state-info-text: @imt-black;
+
+@navbar-default-bg: @imt-yellow;
+
+@brand-info: @imt-yellow;
+
+@font-size-base: 14px;
+
+@navbar-default-link-active-bg: #e35d00;
+@navbar-default-link-active-colo: white;
+@navbar-default-link-active-color: white;
+@navbar-default-link-disabled-color: black;
+@navbar-default-link-hover-bg: darken(@navbar-default-bg, 10%);

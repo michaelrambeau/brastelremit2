@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>docpad + IMT - <%= @document.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+<!--    <%- @getBlock("meta").toHTML() %>
+    <%- @getBlock("styles").toHTML() %>-->
+    
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Style used by all pages (header, footer...) -->
+    <link href="../css/common.css" rel="stylesheet">
+    
+    <link href="../css/home.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <!--<button type="button" class="navbar-toggle my-button" data-toggle="collapse" data-target=".nav-collapse2">GO</button>-->
+        <!--<a class="navbar-brand" href="#">brastelremit.jp v3</a>-->
+        <a class="navbar-brand" href="index.html"><img src="img/logos/brastel_remit_200px.png" width="130" /></a>
+
+        <div class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="<%= "active" if @document.id is "HOME" %>"><a href="index.html">Home</a></li>
+            <li class="<%= "active" if @document.id is "STEP1" %>"><a href="step1.html">Subscribe</a></li>
+            <li><a href="#about">How it works</a></li>
+            <li><a href="#contact">Fees</a></li>
+            <li><a href="#simulator">Simulator</a></li>
+            <li><a href="#contact">Help</a></li>
+<!--            <li><a href="#"><img src="img/flags/languages/us.png" /></a></li>-->
+            <li class="dropdown language-switcher-big visible-lg">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="img/flags/languages/us.png" /> Language / 言語 
+                  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="disabled"><a href="#"><img src="img/flags/languages/us.png" />　English</a></li>
+                <li><a href="#"><img src="img/flags/languages/jp.png" />　日本語</a></li>
+                <li><a href="#"><img src="img/flags/languages/id.png" />　Bahasa Indonesia</a></li>
+                <li><a href="#"><img src="img/flags/languages/my.png" />　Bahasa Malaysia</a></li>
+                <li><a href="#"><img src="img/flags/languages/np.png" />　Nepali</a></li>
+                <li><a href="#"><img src="img/flags/languages/ph.png" />　Tagalog</a></li>
+                <li><a href="#"><img src="img/flags/languages/vn.png" />　Vietnamese</a></li>
+              </ul>
+            </li>
+          </ul>
+            
+          <form class="navbar-form form-inline pull-right hidden-sm">
+              <input type="text" placeholder="Login" size="10" class="">
+            <input type="password" placeholder="Password" size="10">
+            <button type="submit" class="btn btn-primary btn-small">SIGN IN</button>
+          </form>
+        </div><!--/.nav-collapse -->
+        
+        <ul class="nav navbar-nav language-switcher-small visible-sm" style="">
+            <li class="dropdown pull-right">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <img src="img/flags/languages/us.png" /> <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="disabled"><a href="#"><img src="img/flags/languages/us.png" />　English</a></li>
+                    <li><a href="#"><img src="img/flags/languages/jp.png" />　日本語</a></li>
+                    <li><a href="#"><img src="img/flags/languages/id.png" />　Bahasa Indonesia</a></li>
+                    <li><a href="#"><img src="img/flags/languages/my.png" />　Bahasa Malaysia</a></li>
+                    <li><a href="#"><img src="img/flags/languages/np.png" />　Nepali</a></li>
+                    <li><a href="#"><img src="img/flags/languages/ph.png" />　Tagalog</a></li>
+                    <li><a href="#"><img src="img/flags/languages/vn.png" />　Vietnamese</a></li>
+                  </ul>
+            </li>
+        </ul>
+        
+        <ul class="nav navbar-nav login-button-small visible-sm">
+            <li class="dropdown pull-right">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">&nbsp;
+                </a>
+                <form class="dropdown-menu login-form">
+                    <fieldset>
+                        <legend>Member site</legend>
+                        <div class="form-group">
+                            <input type="text" placeholder="Login" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" class="form-control">
+                        </div>
+                        <p class="text-center">
+                            <button type="submit" class="btn btn-primary">SIGN IN</button>
+                        </p> 
+                    </fieldset>   
+                </form>
+            </li>                
+        </ul>        
+        
+      </div>
+    </div>
+    <!--    .navbar-->
+    
+    
+    <%- @content %>
+    <%- @getBlock("scripts").toHTML() %>
+    
+    <footer>
+
+        <div class="container">
+            <div class="contact-us">
+              <div class="part1">&nbsp;</div>
+              <div class="part2">
+                <a href="#">CONTACT US</a>
+              </div>
+            </div>
+            <p class="links">
+              <a href="#">Terms and Conditions</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Statement of Anti-Social Forces</a>
+              <a href="#">Remittance Regulations</a>
+              <a href="#">Declaration Against Anti-Social Forces</a>
+              <a href="#">Electronic Delivery</a>
+            </p>
+            <p class="legal-information">Brastel Co., Ltd. | 130-0015 Tokyo-to, Sumida-ku, Yokoami 2-6-2 | Copyright ©2011 Brastel Co., Ltd. All rights reserved.</p>
+      </div>
+        
+         
+
+    </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="../brastelremit/public_html/js/vendor/jquery-1.10.1.js"><\/script>')</script>
+
+    <script src="js/bootstrap.js"></script>
+
+</body>
+</html>

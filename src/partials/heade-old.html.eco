@@ -1,0 +1,54 @@
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
+          
+        <div class="navbar-header">  
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html"><img src="img/logos/brastel_remit_200px.png" width="130" /></a>
+           
+                    <%- @partial('mobile/language-switcher.html') %>
+
+             
+        </div>
+          
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="<%= "active" if @document.menuId is "HOME" %>"><a href="index.html">Home</a></li>
+            <li class="<%= "active" if @document.menuId is "REGISTRATION" %>"><a href="step1.html">Subscribe</a></li>
+            <li class="<%= "active" if @document.menuId is "HOWITWORKS" %>"><a href="howitworks.html">How it works</a></li>
+            <li class="<%= "active" if @document.menuId is "FEES" %>""><a href="fees.html">Fees</a></li>
+            <li class="<%= "active" if @document.menuId is "SIMULATOR" %>""><a href="simulator.html">Simulator</a></li>
+            <li class="<%= "active" if @document.menuId is "HELP" %>""><a href="help.html">Help</a></li>
+<!--            <li><a href="#"><img src="img/flags/languages/us.png" /></a></li>-->
+            <li class="dropdown language-switcher-big visible-lg">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="img/flags/languages/us.png" /> Language / 言語 
+                  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="disabled"><a href="#"><img src="img/flags/languages/us.png" />　English</a></li>
+                <li><a href="#"><img src="img/flags/languages/jp.png" />　日本語</a></li>
+                <li><a href="#"><img src="img/flags/languages/id.png" />　Bahasa Indonesia</a></li>
+                <li><a href="#"><img src="img/flags/languages/my.png" />　Bahasa Malaysia</a></li>
+                <li><a href="#"><img src="img/flags/languages/np.png" />　Nepali</a></li>
+                <li><a href="#"><img src="img/flags/languages/ph.png" />　Tagalog</a></li>
+                <li><a href="#"><img src="img/flags/languages/vn.png" />　Vietnamese</a></li>
+              </ul>
+            </li>
+          </ul>
+            
+          <form class="navbar-form form-inline pull-right visible-md visible-lg">
+              <input type="text" placeholder="Login" size="10" class="">
+            <input type="password" placeholder="Password" size="10">
+            <button type="submit" class="btn btn-primary btn-sm">SIGN IN</button>
+          </form>
+        </div><!--/.nav-collapse -->
+        
+        
+      </div>
+    </div>
+    <!--    .navbar-->
